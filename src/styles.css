@@ -1,0 +1,881 @@
+section {
+  height: 500px;
+  background-color: white;
+}
+.hero {
+  background-color: #FFFFFF;
+  height: 90vh;
+  color: #000;
+  /* font-size: 40px; */
+}
+
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  height: 80%; /* 100% of parent div, not view height (vh) (note, no action required) */
+  justify-content: center;
+}
+
+.hero-text {
+  margin-left: 11.97%;
+  margin-top: 30vh;
+}
+
+@media (max-width: 935px) {
+  .hero-text {
+      margin-left: 6.66%;
+      margin-top: 30vh;
+  }
+}
+
+.about-page-textbox {
+  width: 600px;
+}
+
+@media (max-width: 935px) {
+  .about-page-textbox {
+    width: 400px;
+  }
+}
+
+@media (max-width: 435px) {
+  .about-page-textbox {
+    width: 300px;
+  }
+}
+
+.paragraph-2 {
+  margin-top: 19px;
+}
+
+
+.logo {
+  height: 39px;
+  max-height: 60px;
+  max-width: 190px;
+  /* margin-right: 11px; */
+  /* margin-top: 0px; */
+  /* margin-left: 4.23%; */
+  /* margin-bottom: 0px;  */
+  padding: 10px 0px 0px 30px;
+}
+
+
+
+/*----------- Font Styles -----------*/
+/*--- + some margins & positioning ---*/
+
+h1 {
+/* Any colour you like. */
+/* see 'hero-text' for positioning */
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 83px;
+  /* or 112% */
+  margin: 0;
+  margin-bottom: 30px;
+  /* Background/On background */
+  color: #000000;
+}
+
+@media (max-width: 935px) {
+  h1 {
+    margin-right: 0%;
+    margin-left: -5.33%
+  }
+}
+    
+h6 {
+/* Below h1 - Any colour you like. */
+  font-family: 'lora';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  margin: 0px;
+  /* Background/On background */
+  color: #000000;
+}
+
+h7 {
+/* seangordon98@gmail.com on contact page */
+/* H7 */
+font-family: 'Futura';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+
+padding-top: 2px;
+color: #000000;
+}
+
+h7:hover{
+  cursor:pointer;
+  color: #FF7A4B;
+}
+    
+p {
+/* Body text */
+/* I am a full-stack graphic designer specialising in
+end-to-end custom website design. */
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  /* Background/On background */
+  color: #000000;
+}
+
+
+
+p {
+  font-family: 'MyFont', sans-serif;
+}
+    
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+}
+  
+a {
+  color: #000;
+}
+  
+  
+/* Contact page icons benath main header - linkedin and behance */
+
+.contact-icons-container {
+  justify-items: left;
+  display: flex;
+  align-items: middle;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  min-width: 100%;
+}
+
+.contact-icon {
+  cursor: pointer;
+  margin: 0px;
+
+  margin-left: 33px;
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.contact-icon path {
+  fill: black;
+}
+
+.contact-icon:hover path {
+  fill: #FF7A4B;
+  cursor: pointer;
+}
+
+
+/* header */
+  
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  width: 100%;
+}
+  
+.header ul {
+  float: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 4.23vw;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+  
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #FFFFFF;
+  text-decoration: none;
+  font: 14px/19px 'noto-sans', sans-serif;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #ffffff;
+  color: #FF7A4B;
+}
+  
+/* .header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 20px 20px;
+  padding-right: 0%;
+  text-decoration: none;
+} */
+
+.cv-img {
+  height: 90px;
+}
+
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+  
+
+/* menu icon */
+  
+.header .menu-icon {
+  cursor: pointer;
+    
+  float: right;
+  padding: 49px 60px;
+  padding-left: 0px;
+  position: relative;
+  user-select: none;
+}
+  
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+  
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+  
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+  
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+  
+
+
+/* menu btn */
+  
+.header .menu-btn {
+  display: none;
+}
+  
+.header .menu-btn:checked ~ .menu {
+  min-height: 100vh;
+  margin-top: 35vh;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+  
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+/* 935px + */
+  
+@media (min-width: 935px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 40px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 935px) {
+  .header {
+    display: initial;
+  }
+}
+
+
+/* Horizontal Media Scroller (overflow x) */
+/*----------------------------------------*/
+
+
+.projects-heading {
+  padding: 0px;
+  padding-bottom: 16px;
+  margin-left: 11.97%;
+
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24.5px;
+  line-height: 33px;
+  color: #000000;
+  }
+
+@media (max-width: 935px) {
+  .projects-heading {
+    margin-left: 6.2%
+  }
+}
+
+ .project-section {
+    Height: 500px; 
+ }  
+
+ @media (max-width: 935px) {
+  .project-section {
+    Height: 500px; 
+ }  
+}
+
+.scroller-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overscroll-behavior-inline: contain;
+  overflow-x: auto;
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scroller-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+@media (max-width: 935px) {
+  .scroller-container {
+    margin-left: -6.5%
+  }
+}
+
+
+
+/* First Card with left margin */
+
+.scroller-item-1 { 
+  cursor: pointer;
+  display: grid;
+  align-items: left;
+  justify-content: left;
+  width: 246px;
+  height: 371px;
+  border: none;
+  margin-top: 0%;
+  margin-right: 1px;
+  margin-bottom: 32px;
+  margin-left: 11.48vw;
+
+  background-color: white;
+  border-radius: 8px;
+}
+
+.scroller-item-1:hover{
+  background-color: black;
+}
+
+.scroller-item-1:hover .project-heading {
+  color: white;
+}
+
+.scroller-item-1:hover .project-textbox {
+  color: white;
+}
+
+
+
+/* Card */
+
+.scroller-item { 
+  cursor: pointer;
+  display: grid;
+  align-items: left;
+  justify-content: left;
+  width: 246px;
+  height: 371px;
+  border: none;
+  margin-top: 0%;
+  margin-right: 1px;
+  margin-bottom: 32px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.scroller-item:hover{
+  background-color: black;
+}
+
+.scroller-item:hover .project-heading {
+  color: white;
+}
+
+.scroller-item:hover .project-textbox {
+  color: white;
+}
+
+
+
+/* Last Card with right margin */
+
+.scroller-item-last {
+  cursor: pointer;
+  display: grid;
+  align-items: left;
+  justify-content: left;
+  width: 246px;
+  height: 371px;
+  border: none;
+  margin-top: 0px;
+    
+  margin-right: 11.97vw;
+    
+  margin-bottom: 32px;
+  margin-left: 0px;
+  background-color: white;
+  border-radius: 8px;
+}
+    
+.scroller-item-last:hover{
+  background-color: black;
+}
+    
+.scroller-item-last:hover .project-heading {
+  color: white;
+}
+    
+.scroller-item-last:hover .project-textbox {
+  color: white;
+}
+    
+
+
+/* Card image */
+
+.project-image { 
+  width: 230px;
+  height: 230px;
+
+  /* Image gradient */
+  background: linear-gradient(137.12deg, #FF3A3A 2.93%, #FFDF68 88.94%);
+
+  border-radius: 4px;
+  justify-self: middle;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+
+
+/* Card heading */
+
+.project-heading { 
+  height: 26px;
+  margin-left: 16px;
+  margin-top: 8px;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.5px;
+  line-height: 25px;
+  color: black;
+}
+
+
+
+/* Card text */
+
+.project-textbox { 
+  height: 51px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+
+
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* Background/On background */
+  color: #000000;
+}
+
+@media (min-width: 935px) {
+  .scroller-item-1{
+    width: 350px;
+    height: 459px;
+  }
+    
+  .scroller-item{
+    width: 350px;
+    height: 459px;
+  }
+
+  .scroller-item-last{
+    width: 350px;
+    height: 459px;
+  }
+
+  .project-image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .project-textbox {
+    margin-bottom: 8px;
+  }
+}
+
+/* Additional paragraph section below the scroller on this page */
+/* ------------------------------------------------------------ */
+
+.about-page-textbox-2 {
+  width: 600px;
+  margin-left: 11.97vw;
+}
+
+@media (max-width: 935px) {
+  .about-page-textbox-2 {
+    width: 400px;
+    margin-left: 6.66%;
+  }
+}
+
+@media (max-width: 435px) {
+  .about-page-textbox-2 {
+    width: 300px;
+  }
+}
+
+.about-text-section {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  margin:0px;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+@media (max-width: 935px) {
+  .about-text-section {
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+
+/* CTA-section */
+/*-------------*/
+
+.CTA-section {
+  background-color: #FDF8F5;
+  height: 400px;
+  margin-top: 0px;
+}
+
+a:link { text-decoration: none; }
+
+@media (min-width: 935px) {
+  .CTA-section {
+     margin-top: 67px;
+  }
+}
+
+.CTA-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 100% of parent div, not view height (vh) (note, no action required) */
+  justify-content: center;
+}
+
+.CTA-heading {
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.5px;
+  line-height: 25px;
+  margin-left: 11.97vw;
+  color: #000000;
+}
+
+.CTA-links { 
+  text-decoration: none;
+  list-style: none;
+  padding-top: 16px;
+  padding-left: 0px;
+  margin-left: 11.97vw;
+
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* Background/On background */
+  color: #000000;
+}
+
+@media (max-width: 935px) {
+  .CTA-heading {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .CTA-links {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+.CTA-links a:hover {
+    color: #FF7A4B;
+}
+
+
+
+/* footer section */
+/* -------------- */
+
+footer {
+  height: 300px;
+  background-color: #252525;
+}
+
+.footer-area {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  background-color: #252525;
+  height: 100%;
+    
+  margin-left: 11.97%;
+}
+
+.footer-container-1 {
+  display: grid;
+  align-items: left;
+  justify-content: left;
+  width: 190px;
+  height: 252px;
+  border: none;
+  margin: 0%;
+  background-color: #252525;
+}
+
+.footer-heading-1 {
+  /* H7 */
+  margin-top: 54px;
+  font-family: 'futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-paragraph {
+  /* Endnote */
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.75px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.footer-icons-container {
+  justify-items: left;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-icon {
+  /* cursor: pointer; */
+  margin: 0px;
+  margin-right: 10px;
+  padding-top: 20px;
+  height: 24px;
+}
+
+
+.footer-icon:hover {
+  fill: #FF7A4B;
+  cursor: pointer;
+}
+
+.footer-container-2 {
+  display: grid;
+  align-items: left;
+  justify-content: left;
+  width: 100px;
+  height: 252px;
+  border: none;
+  margin: 0%;
+  margin-right: 11.97%;
+  background-color: #252525;
+}
+
+.footer-heading-2 {
+  /* H7 */
+  margin-top: 54px;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-nav-links li {
+  /* Endnote */
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.75px;
+  line-height: 15px;
+}
+
+.footer-nav-links li a {
+  color: white; /* changes text color to white */
+}
+
+.footer-nav-links li a:hover {
+  color: #FF7A4B;; /* changes text color to blue on hover */
+}
+
+.footer-copyright-section {
+  /* Footnote */
+  font-family: 'noto-sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.25px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
+
+/* Project page images */
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 11.97vw;
+  margin-right: 11.97vw;
+  height: auto;
+}
+
+@media (max-width: 935px) {
+  .image-section {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.images-container {
+  margin-top: 20px;
+  max-width: 1400px;
+}
+
+.project-png {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  display: block;
+}
+
+.cv-img {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 16px;
+  grid-column-gap: 60px;
+  margin-right: 11.97%;
+  grid-template-columns: [col] 1fr [col] 1fr ;
+  grid-template-rows: [row] 1fr [row] 1fr;
+  max-width: 1300px;
+}
+
+.project-description-container {
+  margin-left: 11.97%;
+  margin-right: 11.97%;
+}
+
+.description-p {
+  margin-top: 10px;
+}
+
+/* @media (max-width: 935px) {
+  .grid-container {
+    margin-left: 6.66%;
+    margin-right: 6.66%;
+  }
+} */
+
+@media (max-width: 935px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row] 1fr [row] 1fr [row] 1fr [row] 1fr;
+    margin-right: 6.66%;
+  }
+}
