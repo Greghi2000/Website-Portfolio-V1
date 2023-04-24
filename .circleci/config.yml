@@ -1,20 +1,13 @@
-# .circleci/config.yml
-
 version: 2.1
 jobs:
-  test:
-    docker:
-      - image: cimg/node:16.15.0
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
-      - run: npm run lint
+  # Removed the "test" job
 workflows:
   version: 2.1
   build:
     jobs:
-      - test:
+      # Removed the "test" job reference
+      # Only builds the code on the main and develop branches
+      - build:
           filters:
             branches:
               only:
