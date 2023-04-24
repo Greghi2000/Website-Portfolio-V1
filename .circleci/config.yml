@@ -3,8 +3,10 @@ orbs:
   aws-s3: circleci/aws-s3@3.0.0
 jobs:
   deploy:
-    # environment:
-    #   AWS_REGION: eu-west-2
+    docker:
+      - image: cimg/node:16.15.0
+    environment:
+     AWS_REGION: eu-west-2
     steps:
       - checkout
       - aws-s3/sync:
