@@ -1,15 +1,10 @@
 version: 2.1
-jobs:
-  # Removed the "test" job
 workflows:
   version: 2.1
-  build:
+  deploy:
     jobs:
-      # Removed the "test" job reference
-      # Only builds the code on the main and develop branches
-      - build:
+      - deploy:
           filters:
             branches:
               only:
                 - main
-                - develop
