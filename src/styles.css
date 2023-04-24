@@ -503,10 +503,6 @@ a {
 .project-image { 
   width: 230px;
   height: 230px;
-
-  /* Image gradient */
-  background: linear-gradient(137.12deg, #FF3A3A 2.93%, #FFDF68 88.94%);
-
   border-radius: 4px;
   justify-self: middle;
   margin-left: 8px;
@@ -850,7 +846,7 @@ footer {
   grid-column-gap: 60px;
   margin-right: 11.97%;
   grid-template-columns: [col] 1fr [col] 1fr ;
-  grid-template-rows: [row] 1fr [row] 1fr;
+  grid-template-rows: [row] 1fr;
   max-width: 1300px;
 }
 
@@ -875,7 +871,16 @@ footer {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: [col] 1fr;
-    grid-template-rows: [row] 1fr [row] 1fr [row] 1fr [row] 1fr;
+    grid-template-rows: [row] 1fr;
     margin-right: 6.66%;
   }
+}
+
+.about-h6 {
+  padding-bottom: 10px;
+}
+
+.about-p-lang {
+  padding-top: 10px;
+  font-weight: 600;
 }
