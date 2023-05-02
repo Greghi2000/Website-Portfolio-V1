@@ -312,9 +312,9 @@ a {
   top: 0;
 }
 
-
-
-/* 935px + */
+/* .project-thumbnail {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+} */
   
 @media (min-width: 935px) {
   .header li {
@@ -425,7 +425,6 @@ a {
   margin-right: 1px;
   margin-bottom: 32px;
   margin-left: 11.48vw;
-
   background-color: white;
   border-radius: 8px;
 }
