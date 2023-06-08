@@ -10,11 +10,8 @@ jobs:
     steps:
       - checkout
       - aws-s3/sync:
-          from: . # From where???
+          from: .
           to: 's3://www.gregoriofumagalli.com/'
-          # arguments: |
-          #   --acl public-read \
-          #   --cache-control "max-age=86400"
 workflows:
   version: 2.1
   build:
